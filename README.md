@@ -17,6 +17,7 @@ The project was report was divided into several parts and we only give an a brie
 Section deals with the hardware of the model. The study, arrangement , cost of all the parts used
 1. Parts used 
 2. Schematic
+<img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/scehmatic.png" width="500">
 
-3. Prototype
+ 3. Prototype
 <img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/prototype.jpeg" width="500">
