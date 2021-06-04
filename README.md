@@ -19,4 +19,4 @@ Section deals with the hardware of the model. The study, arrangement , cost of a
 2. Schematic
 
 3. Prototype
-<img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/prototype.jpeg" width="500">\
+<img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/prototype.jpeg" width="500">
