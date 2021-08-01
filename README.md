@@ -16,8 +16,24 @@ The project was report was divided into several parts and we only give an a brie
 ### Hardware 
 Section deals with the hardware of the model. The study, arrangement , cost of all the parts used
 1. Parts used 
+a. PIC16F877A
+b. NEMA 17 2.5 Kg-cm Bipolar Stepper Motor
+c. L293d
+d. Light Dependant Resistor 
+e. Solar Panel
+f. Battery
+g. Charge Controller
+h. Buck converter
+
 2. Schematic
 <img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/scehmatic.png" width="500">
 
  3. Prototype
 <img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/prototype.jpeg" width="500">
+
+
+### Software
+The algorithm reads the value of inputs which are provided by the LDRs and is stored in the values of V1 and V2. It further compares the value of V1 and V2, if the value of the V1 and V2 are lesser than the expected value during the day(800) then the solar panel remains in the starting position and when the values cross the threes hold, they are compared between each other and the solar panel moves accordingly. \\
+If the value of V1 is bigger than the value of V2 then the solar panel moves toward 1st LDR and stops when the values become approximately same. After each iteration this process is repeated until night. After sunset the whole solar panel resets in the starting position. \\
+The whole algorithm is shown in the flowchart below.
+<img src="https://github.com/singhmeet11/Solar-Tracking-System/Screenshot (11).png" width="500">
