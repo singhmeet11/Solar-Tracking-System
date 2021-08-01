@@ -121,6 +121,7 @@ domestic applications.
 <img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/solar 3.jpeg" width="500">
 
 
+
 ## Future Directions 
 
 1. The value for X has been taken 12 for now. But more experiments can be done which will help optimize the value of X for maximum output.
@@ -132,4 +133,9 @@ waterproof.
 3. It can be designed as more user friendly system.
 
 
+
+
+# Sales Pitch 
+
+This project was further pitched for marketing. Detials of which can be found here - https://docs.google.com/presentation/d/10XiMVyZu5B3FWU9lW2OYL1euFInhTNHiA8JoIwIGYPo/edit?usp=sharing
  
