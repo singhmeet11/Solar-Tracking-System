@@ -92,6 +92,8 @@ Therefore ,
 
 This shows that our system is much more efficient. But due to a lot of errors this is not exact.
 
+**Note -** We have used MATLAB and trapezoidal integration for calculating the integrals of this theortical proof.
+
 
 ## Results and Discussions
 We used a voltmeter in order to measure the amount of voltage that the solar panel delivers to the battery via the charge controller. After taking measurements after every hour we plotted a graph between voltage produced by fixed solar panel and by the sun tracking solar panel. 
@@ -116,7 +118,7 @@ implemented to drive large or small solar panels both for commercial purposes as
 domestic applications.
 
 
-<img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/Solar 3.jpeg" width="500">
+<img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/solar 3.jpeg" width="500">
 
 
 ## Future Directions 
