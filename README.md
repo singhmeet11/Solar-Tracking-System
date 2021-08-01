@@ -102,4 +102,32 @@ It was found that the sun tracking solar panel produced similar voltage through 
 
  The graph above proves that the sun tracking solar panel is much more efficient than the static solar panel.
  
+ ## Conclusion 
+ We have been able to make a sun tracking solar system with satisfactory performance.At each time increment of
+one hour, sensing arrangement detected the direction of maximum sunlight intensity and
+oriented the motor in the direction of sun. The output voltage of the solar panel with the tracking
+arrangement was found to be more than the static arrangement in which the direction of the
+panel remain same throughout the day approximately This project
+ensures that the percentage usage of available solar energy on solar panel has increased
+during the day, thus increasing its output voltage available to the load, thus fulfilling the basic
+aim of the work.It is a cost-effective re-programmable embedded system that can easily be
+upgraded to suit in future other tracking algorithms.The system developed can be successfully
+implemented to drive large or small solar panels both for commercial purposes as well as
+domestic applications.
+
+
+<img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/Solar 3.jpeg" width="500">
+
+
+## Future Directions 
+
+1. The value for X has been taken 12 for now. But more experiments can be done which will help optimize the value of X for maximum output.
+
+2. Developments can be made regarding the design of the structure, for example by adding
+covers for the motors and also improving the design of the sensor holder by making it
+waterproof.
+
+3. It can be designed as more user friendly system.
+
+
  
