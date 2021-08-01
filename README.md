@@ -13,7 +13,8 @@ In this project we have used PIC16F877A with bi directional stepper motor inorde
 
 ## Topics included
 The project was report was divided into several parts and we only give an a brief about the whole project here for more depth information look into the project report and presenatation. 
-### Hardware 
+
+## Hardware 
 Section deals with the hardware of the model. The study, arrangement , cost of all the parts used
 1. Parts used 
 a. PIC16F877A
@@ -32,14 +33,14 @@ h. Buck converter
 <img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/prototype.jpeg" width="500">
 
 
-### Software
+## Software
 The algorithm reads the value of inputs which are provided by the LDRs and is stored in the values of V1 and V2. It further compares the value of V1 and V2, if the value of the V1 and V2 are lesser than the expected value during the day(800) then the solar panel remains in the starting position and when the values cross the threes hold, they are compared between each other and the solar panel moves accordingly. \\
 If the value of V1 is bigger than the value of V2 then the solar panel moves toward 1st LDR and stops when the values become approximately same. After each iteration this process is repeated until night. After sunset the whole solar panel resets in the starting position. \\
 The whole algorithm is shown in the flowchart below.
 
 <img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/Screenshot (11).png" width="500">
 
-### A theoretical proof that solar trackers are more efficient
+## A theoretical proof that solar trackers are more efficient
 We have said that adding our sun tracking platforms increase the efficiency of your solar systems. This section will give you a basic theoretical proof of how do we go about doing this? 
 
 The flux of a vector field is defined as
@@ -56,3 +57,49 @@ On a summer day in India the sun rises  at 5:30  in the morning and sets around 
 Now, the efficiency of solar system depends upon how much time does the solar panel face the sun rays directly. So one can say that Solar flux throughout the day  and Efficiency are proportional.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;Efficiency&space;\propto&space;\int_{t1}&space;^{t2}&space;\left[&space;\int_A&space;\Vec{S}.\hat{n}.da&space;\right]&space;dt&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;Efficiency&space;\propto&space;\int_{t1}&space;^{t2}&space;\left[&space;\int_A&space;\Vec{S}.\hat{n}.da&space;\right]&space;dt&space;\end{equation}" title="\begin{equation} Efficiency \propto \int_{t1} ^{t2} \left[ \int_A \Vec{S}.\hat{n}.da \right] dt \end{equation}" /></a>
+
+So lets define 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;I&space;=&space;\int_{t1}&space;^{t2}&space;\left[&space;\int_A&space;\Vec{S}.\hat{n}.da&space;\right]&space;dt&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;I&space;=&space;\int_{t1}&space;^{t2}&space;\left[&space;\int_A&space;\Vec{S}.\hat{n}.da&space;\right]&space;dt&space;\end{equation}" title="\begin{equation} I = \int_{t1} ^{t2} \left[ \int_A \Vec{S}.\hat{n}.da \right] dt \end{equation}" /></a>
+
+The  value of _S_  will depend upon the position of sun and as the position of the sun further depends upon the time of the day,
+
+<img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/bca.jpeg" width="500">
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;\vec{S}&space;=&space;S_0(t)&space;[cos(w_0&space;t)\hat{i}&space;-&space;sin(w_0&space;t)\hat{j}&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;\vec{S}&space;=&space;S_0(t)&space;[cos(w_0&space;t)\hat{i}&space;-&space;sin(w_0&space;t)\hat{j}&space;\end{equation}" title="\begin{equation} \vec{S} = S_0(t) [cos(w_0 t)\hat{i} - sin(w_0 t)\hat{j} \end{equation}" /></a>
+
+where _S_0(t)_ gives the intensity of sun and $w_0$ is the angular frequency of the sun with respect to the position of the solar system.
+
+The value of _n_ will depend upon whether we are considering the solar tracking system or the the static one.
+
+#### Static solar panel 
+
+We find the value of I, 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;I_{static}&space;=&space;7.27&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;I_{static}&space;=&space;7.27&space;\end{equation}" title="\begin{equation} I_{static} = 7.27 \end{equation}" /></a>
+
+#### Sun tracker 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;I_{tracker}&space;=&space;11.35&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;I_{tracker}&space;=&space;11.35&space;\end{equation}" title="\begin{equation} I_{tracker} = 11.35 \end{equation}" /></a>
+
+#### Efficiency increase
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;\Delta&space;Efficiency&space;=&space;\frac{I_{tracker}&space;-&space;I_{static}}{I_{static}}&space;*&space;100&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;\Delta&space;Efficiency&space;=&space;\frac{I_{tracker}&space;-&space;I_{static}}{I_{static}}&space;*&space;100&space;\end{equation}" title="\begin{equation} \Delta Efficiency = \frac{I_{tracker} - I_{static}}{I_{static}} * 100 \end{equation}" /></a>
+
+Therefore , 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;\Delta&space;Efficiency_{theoretical}&space;=&space;56.12&space;\%&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;\Delta&space;Efficiency_{theoretical}&space;=&space;56.12&space;\%&space;\end{equation}" title="\begin{equation} \Delta Efficiency_{theoretical} = 56.12 \% \end{equation}" /></a>
+
+This shows that our system is much more efficient. But due to a lot of errors this is not exact.
+
+
+## Results and Discussions
+We used a voltmeter in order to measure the amount of voltage that the solar panel delivers to the battery via the charge controller. After taking measurements after every hour we plotted a graph between voltage produced by fixed solar panel and by the sun tracking solar panel. 
+
+It was found that the sun tracking solar panel produced similar voltage through out the day, proving the fact that direct sun rays have been obtained by the solar system. On the other hand a peak can be observed for the fixed solar panel.
+
+<img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/Screenshot (6).png" width="500">
+
+ The graph above proves that the sun tracking solar panel is much more efficient than the static solar panel.
+ 
+ 
