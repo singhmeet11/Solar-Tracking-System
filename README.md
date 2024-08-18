@@ -57,6 +57,7 @@ On a summer day in India the sun rises  at 5:30  in the morning and sets around 
 Now, the efficiency of solar system depends upon how much time does the solar panel face the sun rays directly. So one can say that Solar flux throughout the day  and Efficiency are proportional.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;Efficiency&space;\propto&space;\int_{t1}&space;^{t2}&space;\left[&space;\int_A&space;\Vec{S}.\hat{n}.da&space;\right]&space;dt&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;Efficiency&space;\propto&space;\int_{t1}&space;^{t2}&space;\left[&space;\int_A&space;\Vec{S}.\hat{n}.da&space;\right]&space;dt&space;\end{equation}" title="\begin{equation} Efficiency \propto \int_{t1} ^{t2} \left[ \int_A \Vec{S}.\hat{n}.da \right] dt \end{equation}" /></a>
+$$ill = \int_{t_1}^{t_2} \int_A \vec{S}.\hat{n}.da$$
 
 So lets define 
 
