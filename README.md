@@ -54,9 +54,9 @@ On a summer day in India the sun rises  at 5:30  in the morning and sets around 
 
 <img src="https://github.com/singhmeet11/Solar-Tracking-System/blob/main/abc.png" width="500">
 
-Now, the efficiency of solar system depends upon how much time does the solar panel face the sun rays directly. So one can say that Solar flux throughout the day  and Efficiency are proportional.
+Now, the efficiency of solar system depends upon how much time does the solar panel face the sun rays directly.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;Efficiency&space;\propto&space;\int_{t1}&space;^{t2}&space;\left[&space;\int_A&space;\Vec{S}.\hat{n}.da&space;\right]&space;dt&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;Efficiency&space;\propto&space;\int_{t1}&space;^{t2}&space;\left[&space;\int_A&space;\Vec{S}.\hat{n}.da&space;\right]&space;dt&space;\end{equation}" title="\begin{equation} Efficiency \propto \int_{t1} ^{t2} \left[ \int_A \Vec{S}.\hat{n}.da \right] dt \end{equation}" /></a>
+
 $$ill = \int_{t_1}^{t_2} \int_A \vec{S}.\hat{n}.da$$
 
 So lets define 
@@ -83,18 +83,26 @@ We find the value of I,
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;I_{tracker}&space;=&space;11.35&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;I_{tracker}&space;=&space;11.35&space;\end{equation}" title="\begin{equation} I_{tracker} = 11.35 \end{equation}" /></a>
 
-#### Efficiency increase
+#### Illumination increase
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;\Delta&space;Efficiency&space;=&space;\frac{I_{tracker}&space;-&space;I_{static}}{I_{static}}&space;*&space;100&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;\Delta&space;Efficiency&space;=&space;\frac{I_{tracker}&space;-&space;I_{static}}{I_{static}}&space;*&space;100&space;\end{equation}" title="\begin{equation} \Delta Efficiency = \frac{I_{tracker} - I_{static}}{I_{static}} * 100 \end{equation}" /></a>
+$$\Delta (Illumination) = \frac{I_{tracker} - I_{static}}{I_{tracker}} x 100%$$
 
 Therefore , 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\begin{equation}&space;\Delta&space;Efficiency_{theoretical}&space;=&space;56.12&space;\%&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{100}&space;\begin{equation}&space;\Delta&space;Efficiency_{theoretical}&space;=&space;56.12&space;\%&space;\end{equation}" title="\begin{equation} \Delta Efficiency_{theoretical} = 56.12 \% \end{equation}" /></a>
+$$\Delta (Illumination) = 56.12%$$
 
-This shows that our system is much more efficient. But due to a lot of errors this is not exact.
+
+This shows that our system has increase in illumination. But due to a lot of errors this is not exact. 
 
 **Note -** We have used MATLAB and trapezoidal integration for calculating the integrals of this theortical proof.
 
+## Eperimnetal Increase 
+
+$$\text{Efficiency Increase} = \left( \frac{\text{Total Energy (Static Panel)}}{\text{Total Energy (Solar Tracker)}} - 1 \right) \times 100\%$$
+
+$$E = \sum_{i} V_i^2 \times \Delta t$$
+
+by calculating this for our experiment we obtain an increase in effeciency of 5.550790081649626. 
 
 ## Results and Discussions
 We used a voltmeter in order to measure the amount of voltage that the solar panel delivers to the battery via the charge controller. After taking measurements after every hour we plotted a graph between voltage produced by fixed solar panel and by the sun tracking solar panel. 
