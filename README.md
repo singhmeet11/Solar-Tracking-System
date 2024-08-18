@@ -85,11 +85,11 @@ We find the value of I,
 
 #### Illumination increase
 
-$$\Delta (Illumination) = \frac{I_{tracker} - I_{static}}{I_{tracker}} x 100%$$
+$$\Delta (Illumination) = \frac{I_{tracker} - I_{static}}{I_{tracker}} x 100 \%$$
 
 Therefore , 
 
-$$\Delta (Illumination) = 56.12%$$
+$$\Delta (Illumination) = 56.12 \%$$
 
 
 This shows that our system has increase in illumination. But due to a lot of errors this is not exact. 
@@ -102,7 +102,7 @@ $$\text{Efficiency Increase} = \left( \frac{\text{Total Energy (Static Panel)}}{
 
 $$E = \sum_{i} V_i^2 \times \Delta t$$
 
-by calculating this for our experiment we obtain an increase in effeciency of 5.550790081649626. 
+by calculating this for our experiment we obtain an increase in effeciency of 5.550790%. 
 
 ## Results and Discussions
 We used a voltmeter in order to measure the amount of voltage that the solar panel delivers to the battery via the charge controller. After taking measurements after every hour we plotted a graph between voltage produced by fixed solar panel and by the sun tracking solar panel. 
